@@ -1,2 +1,2 @@
-# PICA-Mechanical
-Public executable files and example cases of PICA (PKU IC Analyzer) Mechanical (published paper at DATE 26)
+# M2Mechanical
+Public executable files and example cases of M2Mechanical (published paper at DATE 26)
