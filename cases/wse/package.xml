@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<Package name="WSE" lengthunit="m">
+    <Location offsetX="0" offsetY="0" orientation="R0"/>
+    <MaterialLib File="./material.config"/>
+    <TempData Temperature="298.15"/>
+    <Component number="1" type="Bulk">
+        <Geometry Length="215e-3" Width="216e-3" XYorigin="Center"/>
+        <Layer name="Substrate" FillingMaterial="Substrate">
+            <Geometry Thickness="300e-6"/>
+        </Layer>
+        <Layer name="Connector" FillingMaterial="Si">
+            <Geometry Thickness="50e-6"/>
+        </Layer>
+    </Component>
+    <Component number="2" type="Active" FillingMaterial="Epoxy">
+        <Geometry Length="215e-3" Width="216e-3" XYorigin="Origin"/>
+        <Layer name="Bump" FillingMaterial="Epoxy">
+            <Geometry Thickness="20e-6"/>
+            <Floorplan File="./flp_bump.csv"/>
+        </Layer>
+        <Layer name="Chiplet" FillingMaterial="Epoxy">
+            <Geometry Thickness="150e-6"/>
+            <Floorplan File="./flp_chiplet.csv"/>
+        </Layer>
+    </Component>
+    <Component number="3" type="Bulk">
+        <Geometry Length="215e-3" Width="216e-3" XYorigin="Center"/>
+        <Layer name="Sub" FillingMaterial="Si">
+            <Geometry Thickness="200e-6"/>
+        </Layer>
+    </Component>
+    <Component number="4" type="Bulk">
+        <Geometry Length="250e-3" Width="250e-3" XYorigin="Center"/>
+            <Layer name="Cold_plate" FillingMaterial="Cu">
+                <Geometry Thickness="500e-6"/>
+            </Layer>
+    </Component>
+</Package>

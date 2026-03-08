@@ -1,0 +1,206 @@
+<?xml version="1.0" ?>
+<Package name="SYSTEM" lengthunit="m">
+    <Location offsetX="0" offsetY="0" orientation="R0"/>
+    <MaterialLib File="./material.config"/>
+    <!--TempData File="./raw_temp/raw/steadytemp.txt"/-->
+    <TempData Temperature="298.15"/>
+    <Component number="1" type="Interposer">
+        <Geometry Length="0.057" Width="0.059" XYorigin="Center"/>
+        <Layer name="Substrate" FillingMaterial="Substrate">
+            <Geometry Thickness="0.0002"/>
+        </Layer>
+        <Layer name="C4" FillingMaterial="C4">
+            <Geometry Thickness="7e-05"/>
+        </Layer>
+        <Layer name="Interposer" FillingMaterial="Interposer">
+            <Geometry Thickness="0.00011"/>
+        </Layer>
+    </Component>
+    <Component number="2" type="Active" FillingMaterial="Epoxy">
+        <Geometry Length="0.057" Width="0.059" XYorigin="Origin"/>
+        <Chiplet name="Chiplet_0" FillingMaterial="Si">
+            <Geometry Length="0.012" Width="0.012" XYorigin="(0.0, 0.0022)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_0_flp.csv"/>
+                <Power File="./power/Chiplet_0_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_1" FillingMaterial="Si">
+            <Geometry Length="0.012" Width="0.012" XYorigin="(0.013800000000000002, 0.0)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_1_flp.csv"/>
+                <Power File="./power/Chiplet_1_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_2" FillingMaterial="Si">
+            <Geometry Length="0.018" Width="0.018" XYorigin="(0.039, 0.029)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_2_flp.csv"/>
+                <Power File="./power/Chiplet_2_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_3" FillingMaterial="Si">
+            <Geometry Length="0.018" Width="0.018" XYorigin="(0.0, 0.041)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_3_flp.csv"/>
+                <Power File="./power/Chiplet_3_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_4" FillingMaterial="Si">
+            <Geometry Length="0.018" Width="0.018" XYorigin="(0.0, 0.014199999999999999)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_4_flp.csv"/>
+                <Power File="./power/Chiplet_4_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_5" FillingMaterial="Si">
+            <Geometry Length="0.018" Width="0.018" XYorigin="(0.039, 0.008)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_5_flp.csv"/>
+                <Power File="./power/Chiplet_5_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_6" FillingMaterial="Si">
+            <Geometry Length="0.008" Width="0.012" XYorigin="(0.031, 0.0159)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_6_flp.csv"/>
+                <Power File="./power/Chiplet_6_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_7" FillingMaterial="Si">
+            <Geometry Length="0.008" Width="0.012" XYorigin="(0.0419, 0.047)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_7_flp.csv"/>
+                <Power File="./power/Chiplet_7_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_8" FillingMaterial="Si">
+            <Geometry Length="0.008" Width="0.012" XYorigin="(0.0265, 0.0)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_8_flp.csv"/>
+                <Power File="./power/Chiplet_8_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_9" FillingMaterial="Si">
+            <Geometry Length="0.012" Width="0.008" XYorigin="(0.0299, 0.051)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_9_flp.csv"/>
+                <Power File="./power/Chiplet_9_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+        <Chiplet name="Chiplet_10" FillingMaterial="Si">
+            <Geometry Length="0.012" Width="0.008" XYorigin="(0.045, 0.0)"/>
+            <Layer name="Bond" FillingMaterial="BondMat">
+                <Geometry Thickness="2e-05"/>
+            </Layer>
+            <Layer name="Act" FillingMaterial="Si">
+                <Geometry Thickness="5e-05"/>
+                <Floorplan Type="Macro" File="./flp/Chiplet_10_flp.csv"/>
+                <Power File="./power/Chiplet_10_power.csv"/>
+            </Layer>
+            <Layer name="Sub" FillingMaterial="Si">
+                <Geometry Thickness="0.0001"/>
+            </Layer>
+        </Chiplet>
+    </Component>
+    <Component number="3" type="Bulk">
+        <Geometry Length="0.057" Width="0.059" XYorigin="Center"/>
+        <Layer name="TIM1" FillingMaterial="TIM1">
+            <Geometry Thickness="2e-05"/>
+        </Layer>
+    </Component>
+    <Component number="4" type="Bulk">
+        <Geometry Length="0.08" Width="0.08" XYorigin="Center"/>
+        <Layer name="SPREADER" FillingMaterial="Cu">
+            <Geometry Thickness="0.001"/>
+        </Layer>
+    </Component>
+    <Component number="5" type="Bulk">
+        <Geometry Length="0.1" Width="0.1" XYorigin="Center"/>
+        <Layer name="SINK" FillingMaterial="Cu">
+            <Geometry Thickness="0.002"/>
+        </Layer>
+    </Component>
+    <Component number="6" type="Bulk">
+        <Geometry Length="0.1" Width="0.1" XYorigin="Center"/>
+        <Layer name="SINK" FillingMaterial="Cu">
+            <Geometry Thickness="0.002"/>
+        </Layer>
+    </Component>
+    <Component number="7" type="Bulk">
+        <Geometry Length="0.1" Width="0.1" XYorigin="Center"/>
+        <Layer name="SINK" FillingMaterial="Cu">
+            <Geometry Thickness="0.0029"/>
+        </Layer>
+    </Component>
+</Package>
