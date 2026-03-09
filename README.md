@@ -46,10 +46,18 @@ cd cases/chiplet
 mpirun -np 8 python ../../src/M2Mechanic.py -xml package.xml -config sim.config
 ```
 
-The input files are:
+### Input
 ```
-.xml file: describe the 2.5-D/3-D IC structure; specify paths to the material file and the external temperature results
+.xml file: describe the 2.5-D/3-D IC structure hierarchically; specify paths to the material file and the external temperature results; specify paths to the floorplan and power files if needed
 .config file: include configurations of the simulator.
+```
+
+### Output
+```
+output_dir/3D_sweep_mesh.msh: 3-D sweep mesh in gmsh format
+output_dir/2D_mesh.msh: 2-D mesh in gmsh format
+output_dir/raw/: raw values on DoFs in vtk format
+output_dir/post/: extracted values on certain planes (z coordinates & resolutions are defined in .config file)
 ```
 
 For more details, please refer to the example cases, which cover various methods of use. The user's manual is also comming soon.
